@@ -9,7 +9,18 @@ Run
  $ npm install
 ```
 
+To develop:
 
+```
+ $ npm run develop
+```
+
+To deploy:
+
+```
+ $ npm run build
+ $ npm run deploy
+```
 
 TODO:
   - Make the schedule actually look good and link properly
