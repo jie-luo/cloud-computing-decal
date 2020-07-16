@@ -1,0 +1,20 @@
+[
+  {
+    "date": "2020-07-14",
+    "topic": "Sample day",
+    "lecture": "https://www.youtube.com/watch?v=byAfC5yW_hw",
+    "homework": "sample",
+    "note": "sample",
+    "project": "sample",
+    "quiz": "sample"
+  },
+  {
+    "date": "2020-07-16",
+    "topic": "Sample day 2",
+    "lecture": "",
+    "homework": "",
+    "note": "",
+    "project": "",
+    "quiz": ""
+  }
+]
