@@ -18,19 +18,8 @@
     <p>
       Below should be a table, which is annoying to implement because each individual cell should probably be a component in order to deal with empty cases without spilling spaghetti sauce all over my repository.
     </p>
-    
-    <ul>
-      <li v-for="edge in $page.weeks.edges" :key="edge.node.id">
-        {{ edge.node.date }}: <a :href=edge.node.lecture>Lecture</a>
-      </li>
-    </ul>
 
-    <p> Have some sample pages </p>
-
-    <g-link to="/homeworks/sample">Homework</g-link>
-    <g-link to="/notes/sample">Notes</g-link>
-    <g-link to="/projects/sample">Projects</g-link>
-    <g-link to="/quizes/sample">Quizes</g-link>
+    <Schedule />
 
   </Layout>
 </template>
@@ -53,33 +42,18 @@ query Home {
       }
     }
   }
-
-  weeks: allWeeks(sortBy: "date", order:ASC) {
-    totalCount
-    edges {
-      node {
-        id
-        date
-        topic
-        lecture
-        homework
-        note
-        project
-        quiz
-      }
-    }
-  }
 }
-
 
 </page-query>
 
 <script>
 import AnnouncementHolder from '~/components/AnnouncementHolder.vue'
+import Schedule from '~/components/schedule/Schedule.vue'
 
 export default {
   components: {
-    AnnouncementHolder
+    AnnouncementHolder,
+    Schedule
   }
 }
 </script>
