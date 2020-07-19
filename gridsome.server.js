@@ -1,6 +1,5 @@
 module.exports = function (api) {
   api.loadSource(({ addMetadata }) => {
-    addMetadata('siteName', 'Fall 2020')
     addMetadata('semester', 'Fall 2020')
   })
 
