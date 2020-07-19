@@ -49,7 +49,7 @@ import Schedule from '~/components/schedule/Schedule.vue'
 
 export default {
   metaInfo: {
-    title: 'this.$page.metadata.siteName'
+    title: 'Home',
   },
   components: {
     AnnouncementHolder,

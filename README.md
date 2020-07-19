@@ -18,19 +18,18 @@ To develop:
 To deploy:
 
 ```
- $ npm run build
  $ npm run deploy
 ```
 
 TODO:
-  - Make the schedule actually look good and link properly
-  - Make the header look good and link to actual things
-  - Announcements page
-  - Staff page (preferably with GraphQL)
-  - Resources page
-  - Some method of uploading files and allowing people to download them (PDFs, raw LaTeX, etc)
+  - Add syllabus as a page on the website and not a link to a Google doc
+  - Favicon or logo
+  - Streamlined(?) method of uploading files and allowing people to download them (PDFs, raw LaTeX, etc)
+  - Move repo to staff account
+  - Set up multiple-semester build script using repo branches and/or Github repository settings
   
 NOTES:
   - `schedule.json`'s lecture (and only lecture) is a **direct link**. Other links are **relative to their directory**. For example, if the `homework` field is `sample`, it will link to `homeworks/sample`.
   - Nothing in `schedule.json` can be a complex data structure. Only strings, integers, etc. otherwise GraphQL hates me.
   - Internal links use `<g-link to="">`, but external links still use `<a href="">`. Don't ask me why; Gatsby did the same thing.
+  - [This](https://github.com/gridsome/gridsome/issues/292) is why `StaffCard.vue` uses an ugly hack

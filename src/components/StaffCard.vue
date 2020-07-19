@@ -1,6 +1,5 @@
 <template>
   <nav class="staff-card-holder">
-    <!-- https://github.com/gridsome/gridsome/issues/292 -->
     <g-image class="staff-image" :src="require('!!assets-loader!~/assets' + img)" />
     <nav class="staff-text">
       <h2>{{ name }}</h2>
