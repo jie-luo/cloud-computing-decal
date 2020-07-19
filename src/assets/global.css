@@ -1,3 +1,6 @@
+p {
+  font-size: 16px;
+}
 p img {
   display: block;
   max-width: 100%;

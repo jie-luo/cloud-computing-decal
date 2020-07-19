@@ -2,15 +2,13 @@
   <Layout>
     <h1>{{ $page.metadata.siteName }}</h1>
     <h3>{{ $page.metadata.semester }}</h3>
-    
-
-    <div v-for="edge in $page.announcements.edges" :key="edge.node.id">
+    <nav class="card" v-for="edge in $page.announcements.edges" :key="edge.node.id">
       <AnnouncementHolder 
         :title="edge.node.title" 
         :date="edge.node.date"
         :content="edge.node.content"
       />
-    </div>
+    </nav>
 
     <p>
       Be sure to replace ALL sample data (all markdown data, schedule.json, etc) otherwise someone's gonna need to explain why we have anime on the website.
@@ -43,7 +41,6 @@ query Home {
     }
   }
 }
-
 </page-query>
 
 <script>
@@ -51,6 +48,9 @@ import AnnouncementHolder from '~/components/AnnouncementHolder.vue'
 import Schedule from '~/components/schedule/Schedule.vue'
 
 export default {
+  metaInfo: {
+    title: 'this.$page.metadata.siteName'
+  },
   components: {
     AnnouncementHolder,
     Schedule
@@ -61,5 +61,11 @@ export default {
 <style>
 .home-links a {
   margin-right: 1rem;
+}
+.card {
+  padding: 20px;
+  background: #FFF;
+  border-style: solid;
+  border-width: 2px;
 }
 </style>

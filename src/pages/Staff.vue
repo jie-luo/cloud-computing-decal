@@ -51,7 +51,7 @@ import StaffCard from '~/components/StaffCard.vue'
 
 export default {
   metaInfo: {
-    title: 'Staff'
+    title: 'Staff Page'
   },
   components: {
     StaffCard

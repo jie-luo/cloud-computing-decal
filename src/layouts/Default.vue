@@ -5,8 +5,11 @@
         <g-link to="/">{{ $static.metadata.siteName }}</g-link>
       </strong>
       <nav class="nav">
-        <g-link class="nav__link" to="/">Home</g-link>
+        <g-link class="nav__link" to="/announcements/">Announcements</g-link>
         <g-link class="nav__link" to="/staff/">Course Staff</g-link>
+        <g-link class="nav__link" to="/resources/">Resources</g-link>
+        <a class="nav__link" href="https://docs.google.com/document/d/1fm0MRPCziaeJ7b-c65uh2qUOurnNdhsP7ZCXcuPQwMk/edit">Syllabus</a>
+        <a class="nav__link" href="https://piazza.com/class/">Piazza</a>
       </nav>
     </header>
     <slot />

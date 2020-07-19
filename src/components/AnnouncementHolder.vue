@@ -1,6 +1,6 @@
 <template>
-  <nav class="card">
-    <h2> Latest Announcement: {{ title }} </h2>
+  <nav class="announcement-holder">
+    <h2> {{ title }} </h2>
     <h4> {{ date }} </h4>
     <nav class="content" v-html=content />
   </nav>
@@ -15,10 +15,7 @@ export default {
 </script>
 
 <style>
-.card {
-  padding: 20px;
-  background: #FFF;
-  border-style: solid;
-  border-width: 2px;
+.announcement-holder {
+
 }
 </style>
