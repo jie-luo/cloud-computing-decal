@@ -15,7 +15,7 @@ module.exports = {
       options: {
         typeName: "Homeworks",
         baseDir: "content",
-        path: "homeworks/*.md"
+        path: "homeworks/*/index.md"
       }
     },
     {
@@ -23,7 +23,7 @@ module.exports = {
       options: {
         typeName: "Notes",
         baseDir: "content",
-        path: "notes/*.md"
+        path: "notes/*/index.md"
       }
     },
     {
@@ -31,7 +31,7 @@ module.exports = {
       options: {
         typeName: "Projects",
         baseDir: "content",
-        path: "projects/*.md"
+        path: "projects/*/index.md"
       }
     },
     {
@@ -39,7 +39,7 @@ module.exports = {
       options: {
         typeName: "Quizes",
         baseDir: "content",
-        path: "quizes/*.md"
+        path: "quizes/*/index.md"
       }
     },
   ],

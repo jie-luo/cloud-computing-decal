@@ -42,7 +42,7 @@
         :data="$static.projects"
         prefix="projects"
         :link="edge.node.project"
-        noLinkDisplay="."
+        noLinkDisplay=""
       />
     </td>
   </tr>
@@ -75,6 +75,8 @@ export default {
 }
 #schedule td {
   text-align: center;
+  vertical-align: middle;
+  padding: 5px;
 }
 #schedule, #schedule th, #schedule td {
   border: 1px solid black;
@@ -120,6 +122,7 @@ query Schedule {
       node {
         id
         date (format: "YYYY-MM-DD")
+        dueDate (format: "YYYY-MM-DD")
         title
         path
       }
@@ -131,6 +134,7 @@ query Schedule {
       node {
         id
         date (format: "YYYY-MM-DD")
+        dueDate (format: "YYYY-MM-DD")
         title
         path
       }
@@ -142,6 +146,7 @@ query Schedule {
       node {
         id
         date (format: "YYYY-MM-DD")
+        dueDate (format: "YYYY-MM-DD")
         title
         path
       }

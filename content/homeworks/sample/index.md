@@ -33,6 +33,6 @@ for (let i = 1; i <= 100; i += 1) {
 
 I spent so much time trying to get the codeblocks to follow `primer.css` CSS rules but it just defaults to this default codeblock styling every time and idk why and I hate it. It's the freaking remark plugins, I swear.
 
-![Alt text](./lily.png)
+![Alt text](./daria.png)
 
-anime picture, 10 extra credit points if you know who+what anime, 25 points if you know exactly where this shot is from, and 50 points if you know the source of this edited variant.
+anime, dont say i didn't warn ya
