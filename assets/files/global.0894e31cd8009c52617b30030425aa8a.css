@@ -22,3 +22,12 @@ ol ol, ul ol {
 ul ul ol, ul ol ol, ol ul ol, ol ol ol {
   list-style-type: lower-alpha
 }
+
+hr {
+  border: 0;
+  clear:both;
+  display:block;
+  width: 96%;               
+  background-color:#FFFF00;
+  height: 1px;
+}
