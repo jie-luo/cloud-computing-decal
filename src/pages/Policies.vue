@@ -9,7 +9,7 @@
     
     <h3>Enrollment</h3>
     <p>
-      This course is a 2 unit DeCal. In order to enroll, students must attend the first lecture. We will then send enrollment codes to everyone. We offer 40 seats, but this may increase if we appoint more course staff.
+      This course is a 2 unit DeCal. In order to enroll, students must attend the first lecture. We will then send enrollment codes to everyone. We offer 120 seats, but this may increase if we appoint more course staff.
     </p>
     <p>
       Although this course has no prerequisites, we recommend having experience in at least one programming language.
