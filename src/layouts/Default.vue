@@ -1,25 +1,24 @@
 <template>
   <nav class="layout">
-    <header class="header">
-      <strong>
-        <g-link to="/">{{ $static.metadata.siteName }}</g-link>
-      </strong>
-      <nav class="nav">
-        <g-link class="nav__link" to="/announcements/">Announcements</g-link>
-        <g-link class="nav__link" to="/staff/">Course Staff</g-link>
-        <g-link class="nav__link" to="/resources/">Resources</g-link>
-        <g-link class="nav__link" to="/policies/">Policies</g-link>
-        <a class="nav__link" href="https://piazza.com/class/">Piazza</a>
-      </nav>
-    </header>
+    <ResponsiveNav />
     <slot />
-  <nav class="blank" />
-  <hr />
-  <footer class="footer">
-    <g-image src="~/assets/GitHub-Mark-32px.png" /><a class="nav__link" href="https://github.com/jie-luo/cloud-computing-decal">Website Repository</a>
-  </footer>
+    <nav class="blank" />
+    <hr />
+    <footer class="footer">
+      <g-image src="~/assets/GitHub-Mark-32px.png" /><a class="github-link" href="https://github.com/jie-luo/cloud-computing-decal">Website Repository</a>
+    </footer>
   </nav>
 </template>
+
+<script>
+import ResponsiveNav from '~/components/ResponsiveNav.vue'
+
+export default {
+  components: {
+    ResponsiveNav
+  },
+}
+</script>
 
 <static-query>
 query {
@@ -38,20 +37,8 @@ query {
   padding-right: 20px;
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-  height: 80px;
-}
-
 .blank {
   min-height: 30px;
-}
-
-.nav__link {
-  margin-left: 20px;
 }
 
 .footer {
@@ -59,7 +46,9 @@ query {
   align-items: center;
   margin: 30px;
 }
-.footer a {
+.github-link {
   font-size: 18px;
+  margin-left: 10px;
+  text-align: center;
 }
 </style>
