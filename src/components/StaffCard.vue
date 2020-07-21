@@ -25,8 +25,8 @@ export default {
 }
 .staff-image {
   display: block;
-  min-width: 256px;
-  max-width: 256px;
+  min-width: 128px;
+  max-width: 128px;
   height: auto;
   margin-left: 30px;
   margin-right: 30px;
