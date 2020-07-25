@@ -1,6 +1,6 @@
 <template>
   <nav class="staff-card-holder">
-    <g-image class="staff-image" :src="require('!!assets-loader!~/assets' + img)" />
+    <g-image class="staff-image" :src="require('!!assets-loader!~/assets/staff/' + img)" />
     <nav class="staff-text">
       <h2>{{ name }}</h2>
       <h4>{{ title }}</h4>
