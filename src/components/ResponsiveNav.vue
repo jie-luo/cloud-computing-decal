@@ -1,5 +1,5 @@
 <template>
-  <header class="header" id="header" ref="header">
+  <nav class="header">
     <nav class="header-logo">
       <g-link to="/"><g-image class="logo" src="~/assets/logo.png" /></g-link>
       <strong>
@@ -10,12 +10,14 @@
         ☰
       </a>
     </nav>
-    <g-link class="nav__link" to="/announcements/">Announcements</g-link>
-    <g-link class="nav__link" to="/staff/">Course Staff</g-link>
-    <g-link class="nav__link" to="/resources/">Resources</g-link>
-    <g-link class="nav__link" to="/policies/">Policies</g-link>
-    <a class="nav__link" href="https://piazza.com/class/">Piazza</a>
-  </header>
+    <nav class="nav_link_holder" id="nav_link_holder" ref="nav_link_holder">
+      <g-link class="nav__link" to="/announcements/">Announcements</g-link>
+      <g-link class="nav__link" to="/staff/">Course Staff</g-link>
+      <g-link class="nav__link" to="/resources/">Resources</g-link>
+      <g-link class="nav__link" to="/policies/">Policies</g-link>
+      <a class="nav__link" href="https://piazza.com/class/">Piazza</a>
+    </nav>
+  </nav>
 </template>
 
 <script>
@@ -23,11 +25,11 @@ export default {
   name: 'ResponsiveNav',
   methods: {
     showMenu: function() {
-      var x = this.$refs.header;
-      if (x.className === "header") {
+      var x = this.$refs.nav_link_holder;
+      if (x.className === "nav_link_holder") {
         x.className += " responsive";
       } else {
-        x.className = "header";
+        x.className = "nav_link_holder";
       }
     },
   }
@@ -45,16 +47,23 @@ export default {
   font-size: 18px;
   display: flex;
   align-items: center;
-  width: 100%;
+  flex-basis: auto;
 }
 
 .header {
   display: flex;
   align-items: center;
-  margin-top: 10px;
+  flex-wrap: wrap;
+  margin-top: 0px;
   margin-bottom: 20px;
-  min-height: 80px;
+  min-height: 100px;
   width: 100%;
+}
+
+.nav_link_holder {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .nav__link {
@@ -78,26 +87,31 @@ export default {
   .grow {
     flex-grow: 1;
   }
-  .nav__link {
+  .nav_link_holder {
     display: none;
   }
   .header .show-menu {
     display: block;
+    min-height: 100px;
+  }
+  .header-logo {
+    flex-basis: 100%;
   }
 }
 @media screen and (max-width: 830px) {
-  .header.responsive {
+  .nav_link_holder.responsive {
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
     position: relative;
+    width: 100%;
   }
-  .header.responsive .show-menu {
+  .nav_link_holder.responsive .show-menu {
     position: absolute;
     right: 0px;
   }
-  .header.responsive a.nav__link {
+  .nav_link_holder.responsive a.nav__link {
     display: block;
-    text-align: left;
   }
 } 
 
