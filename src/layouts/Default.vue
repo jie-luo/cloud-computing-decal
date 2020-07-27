@@ -5,7 +5,7 @@
     <nav class="blank" />
     <hr />
     <footer class="footer">
-      <g-image src="~/assets/GitHub-Mark-32px.png" /><a class="github-link" href="https://github.com/jie-luo/cloud-computing-decal">Website Repository</a>
+      <g-image src="~/assets/GitHub-Mark-32px.png" /><a class="github-link" href="https://github.com/BerkeleyCloudComputingDecal/BerkeleyCloudComputingDecal.github.io">Website Repository</a>
     </footer>
   </nav>
 </template>

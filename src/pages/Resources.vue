@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <h1>Resources</h1>
-    <p>But there was nothing here...</p>
+    <p>Check back soon!</p>
   </Layout>
 </template>
 
